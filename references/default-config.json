@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "language": "auto",
+  "paths": {
+    "workbench": ".daily-curator",
+    "config": ".daily-curator/config.json",
+    "rules": ".daily-curator/curation-rules.md",
+    "architecture": ".daily-curator/vault-architecture.md",
+    "unresolved": ".daily-curator/unresolved.md",
+    "curation_log": ".daily-curator/curation-log.md",
+    "daily_notes": "Daily",
+    "templates": "Templates",
+    "quick_capture_template": "Templates/Quick Capture Template.md",
+    "daily_summary_template": "Templates/Daily Summary Template.md",
+    "knowledge_card_template": "Templates/Knowledge Card Template.md",
+    "daily_summaries": "Reviews/Daily",
+    "knowledge_cards": "Knowledge",
+    "sources": "Sources",
+    "mocs": "Maps",
+    "projects": "Projects",
+    "career": "Career"
+  },
+  "naming": {
+    "daily_note": "{date}.md",
+    "daily_summary": "{date} Daily Summary.md",
+    "knowledge_card": "{title}.md",
+    "moc": "{topic} MOC.md"
+  },
+  "scan": {
+    "include_dirs": [],
+    "exclude_dirs": [
+      ".obsidian",
+      ".git",
+      ".trash",
+      ".daily-curator",
+      "node_modules",
+      ".venv",
+      "venv"
+    ],
+    "same_day_modified": true
+  },
+  "behavior": {
+    "prepare_next_day_note": true,
+    "never_overwrite": true,
+    "first_run_requires_dry_run": true,
+    "bulk_move_requires_approval": true
+  },
+  "tags": {
+    "quick_capture": "type/quick-capture",
+    "daily_summary": "type/daily-summary",
+    "knowledge_card": "type/knowledge-card",
+    "resource": "type/resource",
+    "moc": "type/moc",
+    "unverified": "status/unverified",
+    "to_process": "status/to-process",
+    "to_review": "status/to-review"
+  }
+}

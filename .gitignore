@@ -1,0 +1,25 @@
+# Python cache / test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Local release artifacts
+*.zip
+
+# Local example/test vault generated state
+examples/**/.obsidian/
+examples/**/.trash/
+examples/**/.daily-curator/
+examples/**/Templates/
+examples/**/Knowledge/
+examples/**/Sources/
+examples/**/Maps/
+examples/**/Projects/
+examples/**/Career/
+examples/**/Reviews/

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Daily Curator Generic"
+  short_description: "Generic daily-note to knowledge-base curator"
+  default_prompt: "Curate today's daily note into my Obsidian knowledge base"
