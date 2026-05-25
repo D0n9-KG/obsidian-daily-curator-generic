@@ -57,6 +57,65 @@ Daily note 很适合捕捉，但不适合作为最终知识存储层。
 
 ---
 
+## 推荐的 Obsidian 配置
+
+这个 skill 本质上只需要 Markdown 文件就能工作，但如果提前配置好 daily note、模板、链接和恢复机制，使用体验会稳定很多。
+
+### 最低推荐开启的核心插件
+
+建议先开启这些 Obsidian 内置核心插件：
+
+| 插件 | 作用 |
+|---|---|
+| **Daily notes** | 一键打开当天随手记。 |
+| **Templates** | 维护 daily/source/card 等可复用模板。 |
+| **Backlinks** | 查看哪些笔记链接到了当前卡片、资料或日记。 |
+| **Outgoing links** | 发现未链接提及和缺失链接，方便补链接。 |
+| **Search** | 创建新卡片前先搜索旧卡片，减少重复。 |
+| **Quick switcher** | 快速打开笔记、MOC 或 map。 |
+| **Properties view** | 检查和清理 `type`、`status`、`source`、`date` 等元数据。 |
+| **File recovery** | 在尝试 Agent 辅助整理时提供额外恢复保障。 |
+
+### 推荐设置
+
+运行 `bootstrap_vault.py --apply` 后，建议让 Obsidian 设置和 `.daily-curator/config.json` 保持一致：
+
+| 设置位置 | 推荐配置 |
+|---|---|
+| **Daily notes → New file location** | 与 `paths.daily_notes` 一致，默认是 `Daily`。 |
+| **Daily notes → Date format** | 默认使用 `YYYY-MM-DD`，除非你修改了 `naming.daily_note`。 |
+| **Daily notes → Template file location** | 使用生成的 quick-capture 模板，默认 `Templates/Quick Capture Template.md`。 |
+| **Templates → Template folder location** | 与 `paths.templates` 一致，默认是 `Templates`。 |
+| **Properties** | 尽量统一使用 `type`、`status`、`date`、`source`、`tags` 等字段。 |
+| **备份** | 建议开启 File Recovery、Git、Obsidian Sync 历史版本或其它备份方式。 |
+
+### 网页剪藏和外部资料
+
+如果你经常保存网页、文章、文档或工具资料，推荐安装并配置 **Obsidian Web Clipper**。
+
+推荐的 Web Clipper 行为：
+
+- 原始网页剪藏保存到配置中的 source 文件夹，默认是 `Sources`；或
+- 如果你想让所有输入都进入同一个流，也可以追加到当天 daily note；
+- 至少保留 `title`、`url`、`source`、`created` 等元数据；
+- 尚未消化的资料可以标记为 `status: to-process` 或类似状态。
+
+这样可以把“原始资料”和“提炼后的知识卡片”分开，避免知识库变成剪藏仓库。
+
+### 可选社区插件
+
+这些不是必需项。只有当它们本来就适合你的工作流时再安装：
+
+| 插件 | 适用场景 |
+|---|---|
+| **Dataview** | 想做 unresolved items、复习队列、资料库、知识卡片等仪表盘。 |
+| **Tasks** | 在 Obsidian 里系统管理待办事项。 |
+| **Templater** | 需要比核心 Templates 更复杂的动态模板。 |
+| **QuickAdd** | 想用命令菜单快速捕捉内容。 |
+| **Periodic Notes** | 同时维护周复盘、月复盘、季度复盘。 |
+
+建议从核心插件开始。这个 skill 不强制依赖任何社区插件。
+
 ## 快速开始
 
 ### 1. 安装 skill

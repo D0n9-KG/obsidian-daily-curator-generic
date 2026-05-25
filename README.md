@@ -53,7 +53,68 @@ You keep learning without interrupting yourself for perfect formatting. Your age
 
 A good curation run should tell you **what was learned, what was created, and where everything went**.
 
+
 ---
+
+## Recommended Obsidian setup
+
+You can use this skill with plain Markdown files, but the workflow is smoother if Obsidian is configured for daily capture, templates, links, and recovery.
+
+### Minimum recommended core plugins
+
+Enable these built-in Obsidian core plugins:
+
+| Plugin | Why it helps |
+|---|---|
+| **Daily notes** | One-click access to today's capture note. |
+| **Templates** | Insert or maintain reusable daily/source/card templates. |
+| **Backlinks** | See which notes point to a card, source, or daily note. |
+| **Outgoing links** | Find unlinked mentions and missing links while reviewing notes. |
+| **Search** | Quickly locate prior cards before creating duplicates. |
+| **Quick switcher** | Open notes and MOCs/maps without browsing folders. |
+| **Properties view** | Inspect and clean up metadata such as `type`, `status`, `source`, and `date`. |
+| **File recovery** | Provides an extra safety net while experimenting with agent-assisted workflows. |
+
+### Recommended settings
+
+After running `bootstrap_vault.py --apply`, align Obsidian with the generated config:
+
+| Area | Suggested setting |
+|---|---|
+| **Daily notes ? New file location** | Same as `paths.daily_notes` in `.daily-curator/config.json` (default: `Daily`). |
+| **Daily notes ? Date format** | `YYYY-MM-DD` unless you changed `naming.daily_note`. |
+| **Daily notes ? Template file location** | The generated quick-capture template, default `Templates/Quick Capture Template.md`. |
+| **Templates ? Template folder location** | Same as `paths.templates` (default: `Templates`). |
+| **Properties** | Use consistent fields such as `type`, `status`, `date`, `source`, and `tags`. |
+| **Backups** | Keep File Recovery, Git, Obsidian Sync version history, or another backup method enabled. |
+
+### For web clips and imported sources
+
+If you often save web pages, articles, documentation, or tools, install and configure **Obsidian Web Clipper**.
+
+Recommended Web Clipper behavior:
+
+- save raw clips into the configured source folder, default `Sources`; or
+- append quick snippets to the current daily note when you want everything in one capture stream;
+- include at least `title`, `url`, `source`, and `created` metadata;
+- mark undigested clips as `status: to-process` or similar.
+
+This keeps raw source material separate from distilled knowledge cards.
+
+### Optional community plugins
+
+These are not required. Add them only if they already fit your workflow:
+
+| Plugin | Use when |
+|---|---|
+| **Dataview** | You want dashboards for unresolved items, review queues, source notes, or knowledge cards. |
+| **Tasks** | You manage actionable tasks inside Obsidian. |
+| **Templater** | You need advanced dynamic templates beyond the core Templates plugin. |
+| **QuickAdd** | You want command-driven capture menus or faster manual capture. |
+| **Periodic Notes** | You also maintain weekly/monthly/quarterly reviews. |
+
+Start with the core plugins first. The skill is designed to work without requiring any community plugin.
+
 
 ## Quick start
 
