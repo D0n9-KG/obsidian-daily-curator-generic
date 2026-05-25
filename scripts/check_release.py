@@ -37,6 +37,7 @@ FORBIDDEN_PATTERNS = [
 REQUIRED_FILES = [
     "SKILL.md",
     "README.md",
+    "README.zh-CN.md",
     "LICENSE",
     "agents/openai.yaml",
     "references/default-config.json",
