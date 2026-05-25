@@ -81,10 +81,10 @@ After running `bootstrap_vault.py --apply`, align Obsidian with the generated co
 
 | Area | Suggested setting |
 |---|---|
-| **Daily notes ? New file location** | Same as `paths.daily_notes` in `.daily-curator/config.json` (default: `Daily`). |
-| **Daily notes ? Date format** | `YYYY-MM-DD` unless you changed `naming.daily_note`. |
-| **Daily notes ? Template file location** | The generated quick-capture template, default `Templates/Quick Capture Template.md`. |
-| **Templates ? Template folder location** | Same as `paths.templates` (default: `Templates`). |
+| **Daily notes > New file location** | Same as `paths.daily_notes` in `.daily-curator/config.json` (default: `Daily`). |
+| **Daily notes > Date format** | `YYYY-MM-DD` unless you changed `naming.daily_note`. |
+| **Daily notes > Template file location** | The generated quick-capture template, default `Templates/Quick Capture Template.md`. |
+| **Templates > Template folder location** | Same as `paths.templates` (default: `Templates`). |
 | **Properties** | Use consistent fields such as `type`, `status`, `date`, `source`, and `tags`. |
 | **Backups** | Keep File Recovery, Git, Obsidian Sync version history, or another backup method enabled. |
 
